@@ -4,13 +4,14 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'; //can access the store 
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore'; //since it has a default value, you can call it whatever. theres no
-import 'normalize.css/normalize.css';
-import './styles/styles.scss';
-import 'react-dates/lib/css/_datepicker.css';
 
 import { addExpense } from './actions/expenses'; //when using certain actions by name 
 import { setTextFilter } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses'; // since its set as defualt and call whatever name to import the whole file
+
+import 'normalize.css/normalize.css';
+import './styles/styles.scss';
+import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
 
