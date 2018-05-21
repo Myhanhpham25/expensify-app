@@ -15,11 +15,7 @@ export class AddExpensePage extends React.Component {
             <div>
             <h1>Add Expense</h1>
             <ExpenseForm 
-                onSubmit={(expense) => {
-                    //props.dispatch(addExpense(expense)); //add the expense data to the redux store 
-                    props.onSubmit(expense); //more testable component 
-                    props.history.push('/') //after submit it will load to the / page 
-                }}
+                onSubmit={this.onSubmit}
             />
         </div>
         );
