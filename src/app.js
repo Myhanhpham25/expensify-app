@@ -23,6 +23,7 @@ const jsx = (
 ReactDOM.render(jsx, document.getElementById('app'));
 
 
+//HARD CODING DATA 
 // store.dispatch(addExpense({description : 'Water Bill', amount : 4500, createdAt: 900 })); //addExpense - > water bill
 // store.dispatch(addExpense({description: 'Gas Bill', amount : 1000, createdAt: 1000})); //addExpense -> gas bill 
 // store.dispatch(addExpense({description : 'Rent', amount : 195000 })); //addExpense - > water bill
